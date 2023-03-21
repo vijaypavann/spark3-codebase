@@ -1,27 +1,11 @@
-# Home Screen
-
-This is a paragraph.
-
-Both [internal](README.md) and [external](https://example.com) links work.
-
-![Your logo](logo.png)
-
-Another paragraph with **bold**, _italic_, ~~strikethrough~~, and `code` samples.
-
 ---
+label: Welcome
+icon: home
+---
+# Welcome to my Blog 
 
-## Lists
+Here you can find ::
+- :sparkles: Real Time UseCases :sparkles: 
+- :icon-zap: Working Code Samples :icon-zap: in Python & Scala 
+- :jigsaw: Integration Guides :jigsaw: and Configurations
 
-- First item
-- Second item
-- Third item
-
-1. First item
-2. Second item
-3. Third item
-
-> "Cool! This is a quotation."
-
-!!!
-Need to draw attention to something? Use an alert.
-!!!
