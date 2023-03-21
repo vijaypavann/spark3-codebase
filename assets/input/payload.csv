@@ -1,0 +1,49 @@
+index_id,mc_id,mod_type,hist_index,src,json_col,row_id_col
+2345345fgh56565,41456787,1,0,idqa,"{
+	""json_ts"": ""2023/02/23 23:00:01"",
+	""source"": ""abc"",
+	""events"": [{
+		""time_stamp_utc"": ""2021/12/11 12:47:19"",
+		""r_object_id"": ""5f024afe8d5cd0ec"",
+		""audited_obj_id"": ""09024afe81861dbf"",
+		""attribs"": [{
+			""value_new"": ""\""CSSR - (i.e. Some Code). With Desc.\"""",
+			""name"": ""added_notes"",
+			""value_old"": ""\""\""""
+		}, {
+			""value_new"": ""\""Yes\"""",
+			""name"": ""native_code"",
+			""value_old"": ""\""\""""
+		}, {
+			""value_new"": ""\""Yes\"""",
+			""name"": ""req"",
+			""value_old"": ""\""\""""
+		}, {
+			""value_new"": ""\""See\"""",
+			""name"": ""qtp"",
+			""value_old"": ""\""\""""
+		}, {
+			""value_new"": ""\""No\"""",
+			""name"": ""lab_dc"",
+			""value_old"": ""\""\""""
+		}, {
+			""value_new"": ""\""No\"""",
+			""name"": ""ros"",
+			""value_old"": ""\""\""""
+		}, {
+			""value_new"": ""\""Yes\"""",
+			""name"": ""patient"",
+			""value_old"": ""\""\""""
+		}],
+		""string_3"": """",
+		""event_name"": ""data_mart"",
+		""string_2"": """",
+		""string_5"": """",
+		""string_4"": """",
+		""id_1"": ""0000000000000000"",
+		""host_name"": ""abcdef-gh-1"",
+		""string_1"": ""Save"",
+		""id_3"": ""0000000000000000"",
+		""id_2"": ""0000000000000000""
+	}]
+}",087fgedsf43545_1_0
