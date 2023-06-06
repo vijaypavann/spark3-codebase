@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/spark3">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="2.4.0.733988554378">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.0.2.739372487700">
 
     <!-- See retype.com -->
-    <meta name="generator" content="Retype 2.4.0">
+    <meta name="generator" content="Retype 3.0.2">
 
     <!-- Primary Meta Tags -->
-    <title>Python Basics</title>
-    <meta name="title" content="Python Basics">
+    <title>Basics</title>
+    <meta name="title" content="Basics">
     <meta name="description" content="Programming constructs that are helpful while developing Python/Spark Applications" />
 
     <!-- Canonical -->
@@ -20,24 +20,24 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vijaypavann.github.io/spark3/python-3.x/basics/">
-    <meta property="og:title" content="Python Basics">
+    <meta property="og:title" content="Basics">
     <meta property="og:description" content="Programming constructs that are helpful while developing Python/Spark Applications">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://vijaypavann.github.io/spark3/python-3.x/basics/">
-    <meta property="twitter:title" content="Python Basics">
+    <meta property="twitter:title" content="Basics">
     <meta property="twitter:description" content="Programming constructs that are helpful while developing Python/Spark Applications">
 
     <script>(function () { var el = document.documentElement, m = localStorage.getItem("/spark3/doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../favicon.ico" rel="icon" />
-    <link href="../../resources/css/retype.css?v=2.4.0.733988554378" rel="stylesheet" />
+    <link href="../../resources/css/retype.css?v=3.0.2.739372487700" rel="stylesheet" />
 
-    <script type="text/javascript" src="../../resources/js/config.js?v=2.4.0.733988554378" data-turbo-eval="false" defer></script>
-    <script type="text/javascript" src="../../resources/js/retype.js?v=2.4.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=2.4.0.733988554378" data-turbo-eval="false" defer></script>
-    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=2.4.0.733988554378" defer></script>
+    <script type="text/javascript" src="../../resources/js/config.js?v=3.0.2.739372487700" data-turbo-eval="false" defer></script>
+    <script type="text/javascript" src="../../resources/js/retype.js?v=3.0.2" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" type="text/javascript" src="../../resources/js/lunr.js?v=3.0.2.739372487700" data-turbo-eval="false" defer></script>
+    <script id="prism-js" type="text/javascript" src="../../resources/js/prism.js?v=3.0.2.739372487700" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -68,7 +68,7 @@
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
-                                            <path fill-rule="evenodd" d="M11.03 2.59a1.5 1.5 0 011.94 0l7.5 6.363a1.5 1.5 0 01.53 1.144V19.5a1.5 1.5 0 01-1.5 1.5h-5.75a.75.75 0 01-.75-.75V14h-2v6.25a.75.75 0 01-.75.75H4.5A1.5 1.5 0 013 19.5v-9.403c0-.44.194-.859.53-1.144l7.5-6.363zM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v6.25h5v-9.403L12 3.734z"/>
+                                            <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
                                         </g>
                                     </svg>
                                     <span>Home</span>
@@ -78,7 +78,7 @@
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://vijaypavann.github.io" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
-                                            <path fill-rule="evenodd" d="M11.063 1.456a1.75 1.75 0 011.874 0l8.383 5.316a1.75 1.75 0 010 2.956l-8.383 5.316a1.75 1.75 0 01-1.874 0L2.68 9.728a1.75 1.75 0 010-2.956l8.383-5.316zm1.071 1.267a.25.25 0 00-.268 0L3.483 8.039a.25.25 0 000 .422l8.383 5.316a.25.25 0 00.268 0l8.383-5.316a.25.25 0 000-.422l-8.383-5.316z"/><path fill-rule="evenodd" d="M1.867 12.324a.75.75 0 011.035-.232l8.964 5.685a.25.25 0 00.268 0l8.964-5.685a.75.75 0 01.804 1.267l-8.965 5.685a1.75 1.75 0 01-1.874 0l-8.965-5.685a.75.75 0 01-.231-1.035z"/><path fill-rule="evenodd" d="M1.867 16.324a.75.75 0 011.035-.232l8.964 5.685a.25.25 0 00.268 0l8.964-5.685a.75.75 0 01.804 1.267l-8.965 5.685a1.75 1.75 0 01-1.874 0l-8.965-5.685a.75.75 0 01-.231-1.035z"/>
+                                            <path d="M11.063 1.456a1.749 1.749 0 0 1 1.874 0l8.383 5.316a1.751 1.751 0 0 1 0 2.956l-8.383 5.316a1.749 1.749 0 0 1-1.874 0L2.68 9.728a1.751 1.751 0 0 1 0-2.956Zm1.071 1.267a.25.25 0 0 0-.268 0L3.483 8.039a.25.25 0 0 0 0 .422l8.383 5.316a.25.25 0 0 0 .268 0l8.383-5.316a.25.25 0 0 0 0-.422Z"/><path d="M1.867 12.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.749 1.749 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035Z"/><path d="M1.867 16.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.749 1.749 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035Z"/>
                                         </g>
                                     </svg>
                                     <span>Databricks CodeBase</span>
@@ -88,7 +88,7 @@
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://vijaypavann.github.io" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
-                                            <path fill-rule="evenodd" d="M3.103 10.107c0-4.244 3.445-7.607 7.733-7.607 3.19 0 5.912 1.858 7.099 4.563a.634.634 0 01.01.022l.001.006C21.348 7.345 24 10.095 24 13.536 24 17.148 21.076 20 17.431 20H5.017C2.23 20 0 17.83 0 15.06a4.9 4.9 0 013.112-4.581 8.024 8.024 0 01-.009-.372zM10.836 4c-3.485 0-6.233 2.717-6.233 6.107 0 .284.022.602.052.756a.75.75 0 01-.552.869c-1.52.385-2.603 1.712-2.603 3.328 0 1.917 1.532 3.44 3.517 3.44h12.414c2.843 0 5.069-2.206 5.069-4.964 0-2.759-2.226-4.965-5.069-4.965a.75.75 0 01-.696-.47l-.179-.446C15.606 5.5 13.424 4 10.836 4z"/>
+                                            <path d="M3.103 10.107c0-4.244 3.445-7.607 7.733-7.607 3.19 0 5.912 1.858 7.099 4.563l.01.022.001.006C21.348 7.345 24 10.095 24 13.536 24 17.148 21.076 20 17.431 20H5.017C2.23 20 0 17.83 0 15.06a4.899 4.899 0 0 1 3.112-4.581 7.696 7.696 0 0 1-.009-.372ZM10.836 4c-3.485 0-6.233 2.717-6.233 6.107 0 .284.022.602.052.756a.75.75 0 0 1-.552.869c-1.52.385-2.603 1.712-2.603 3.328 0 1.917 1.532 3.44 3.517 3.44h12.414c2.843 0 5.069-2.206 5.069-4.964 0-2.759-2.226-4.965-5.069-4.965a.75.75 0 0 1-.696-.47l-.179-.446C15.606 5.5 13.424 4 10.836 4Z"/>
                                         </g>
                                     </svg>
                                     <span>Azure CodeBase</span>
@@ -98,7 +98,7 @@
                                 <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://vijaypavann.github.io" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                         <g fill="currentColor">
-                                            <path d="M8.456 14.494a.75.75 0 011.068.17 3.08 3.08 0 00.572.492A3.381 3.381 0 0012 15.72c.855 0 1.487-.283 1.904-.562a3.081 3.081 0 00.572-.492l.021-.026a.75.75 0 011.197.905l-.027.034c-.013.016-.03.038-.052.063-.044.05-.105.119-.184.198a4.569 4.569 0 01-.695.566A4.88 4.88 0 0112 17.22a4.88 4.88 0 01-2.736-.814 4.57 4.57 0 01-.695-.566 3.253 3.253 0 01-.236-.261c-.259-.332-.223-.824.123-1.084z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"/><path d="M9 10.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM16.25 12a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z"/>
+                                            <path d="M8.456 14.494a.75.75 0 0 1 1.068.17 3.08 3.08 0 0 0 .572.492A3.381 3.381 0 0 0 12 15.72c.855 0 1.487-.283 1.904-.562a3.081 3.081 0 0 0 .572-.492l.021-.026a.75.75 0 0 1 1.197.905l-.027.034c-.013.016-.03.038-.052.063-.044.05-.105.119-.184.198a4.569 4.569 0 0 1-.695.566A4.88 4.88 0 0 1 12 17.22a4.88 4.88 0 0 1-2.736-.814 4.57 4.57 0 0 1-.695-.566 3.253 3.253 0 0 1-.236-.261c-.259-.332-.223-.824.123-1.084Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/><path d="M9 10.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0ZM16.25 12a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z"/>
                                         </g>
                                     </svg>
                                     <span>My Profile</span>
@@ -184,7 +184,7 @@
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="../../">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M11.03 2.59a1.5 1.5 0 011.94 0l7.5 6.363a1.5 1.5 0 01.53 1.144V19.5a1.5 1.5 0 01-1.5 1.5h-5.75a.75.75 0 01-.75-.75V14h-2v6.25a.75.75 0 01-.75.75H4.5A1.5 1.5 0 013 19.5v-9.403c0-.44.194-.859.53-1.144l7.5-6.363zM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v6.25h5v-9.403L12 3.734z"/>
+                                                    <path d="M11.03 2.59a1.501 1.501 0 0 1 1.94 0l7.5 6.363a1.5 1.5 0 0 1 .53 1.144V19.5a1.5 1.5 0 0 1-1.5 1.5h-5.75a.75.75 0 0 1-.75-.75V14h-2v6.25a.75.75 0 0 1-.75.75H4.5A1.5 1.5 0 0 1 3 19.5v-9.403c0-.44.194-.859.53-1.144ZM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v6.25h5v-9.403Z"/>
                                                 </g>
                                             </svg>
                                             <span>Home</span>
@@ -194,7 +194,7 @@
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://vijaypavann.github.io" target="_blank">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M11.063 1.456a1.75 1.75 0 011.874 0l8.383 5.316a1.75 1.75 0 010 2.956l-8.383 5.316a1.75 1.75 0 01-1.874 0L2.68 9.728a1.75 1.75 0 010-2.956l8.383-5.316zm1.071 1.267a.25.25 0 00-.268 0L3.483 8.039a.25.25 0 000 .422l8.383 5.316a.25.25 0 00.268 0l8.383-5.316a.25.25 0 000-.422l-8.383-5.316z"/><path fill-rule="evenodd" d="M1.867 12.324a.75.75 0 011.035-.232l8.964 5.685a.25.25 0 00.268 0l8.964-5.685a.75.75 0 01.804 1.267l-8.965 5.685a1.75 1.75 0 01-1.874 0l-8.965-5.685a.75.75 0 01-.231-1.035z"/><path fill-rule="evenodd" d="M1.867 16.324a.75.75 0 011.035-.232l8.964 5.685a.25.25 0 00.268 0l8.964-5.685a.75.75 0 01.804 1.267l-8.965 5.685a1.75 1.75 0 01-1.874 0l-8.965-5.685a.75.75 0 01-.231-1.035z"/>
+                                                    <path d="M11.063 1.456a1.749 1.749 0 0 1 1.874 0l8.383 5.316a1.751 1.751 0 0 1 0 2.956l-8.383 5.316a1.749 1.749 0 0 1-1.874 0L2.68 9.728a1.751 1.751 0 0 1 0-2.956Zm1.071 1.267a.25.25 0 0 0-.268 0L3.483 8.039a.25.25 0 0 0 0 .422l8.383 5.316a.25.25 0 0 0 .268 0l8.383-5.316a.25.25 0 0 0 0-.422Z"/><path d="M1.867 12.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.749 1.749 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035Z"/><path d="M1.867 16.324a.75.75 0 0 1 1.035-.232l8.964 5.685a.25.25 0 0 0 .268 0l8.964-5.685a.75.75 0 0 1 .804 1.267l-8.965 5.685a1.749 1.749 0 0 1-1.874 0l-8.965-5.685a.75.75 0 0 1-.231-1.035Z"/>
                                                 </g>
                                             </svg>
                                             <span>Databricks CodeBase</span>
@@ -204,7 +204,7 @@
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://vijaypavann.github.io" target="_blank">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
-                                                    <path fill-rule="evenodd" d="M3.103 10.107c0-4.244 3.445-7.607 7.733-7.607 3.19 0 5.912 1.858 7.099 4.563a.634.634 0 01.01.022l.001.006C21.348 7.345 24 10.095 24 13.536 24 17.148 21.076 20 17.431 20H5.017C2.23 20 0 17.83 0 15.06a4.9 4.9 0 013.112-4.581 8.024 8.024 0 01-.009-.372zM10.836 4c-3.485 0-6.233 2.717-6.233 6.107 0 .284.022.602.052.756a.75.75 0 01-.552.869c-1.52.385-2.603 1.712-2.603 3.328 0 1.917 1.532 3.44 3.517 3.44h12.414c2.843 0 5.069-2.206 5.069-4.964 0-2.759-2.226-4.965-5.069-4.965a.75.75 0 01-.696-.47l-.179-.446C15.606 5.5 13.424 4 10.836 4z"/>
+                                                    <path d="M3.103 10.107c0-4.244 3.445-7.607 7.733-7.607 3.19 0 5.912 1.858 7.099 4.563l.01.022.001.006C21.348 7.345 24 10.095 24 13.536 24 17.148 21.076 20 17.431 20H5.017C2.23 20 0 17.83 0 15.06a4.899 4.899 0 0 1 3.112-4.581 7.696 7.696 0 0 1-.009-.372ZM10.836 4c-3.485 0-6.233 2.717-6.233 6.107 0 .284.022.602.052.756a.75.75 0 0 1-.552.869c-1.52.385-2.603 1.712-2.603 3.328 0 1.917 1.532 3.44 3.517 3.44h12.414c2.843 0 5.069-2.206 5.069-4.964 0-2.759-2.226-4.965-5.069-4.965a.75.75 0 0 1-.696-.47l-.179-.446C15.606 5.5 13.424 4 10.836 4Z"/>
                                                 </g>
                                             </svg>
                                             <span>Azure CodeBase</span>
@@ -214,7 +214,7 @@
                                         <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://vijaypavann.github.io" target="_blank">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
                                                 <g fill="currentColor">
-                                                    <path d="M8.456 14.494a.75.75 0 011.068.17 3.08 3.08 0 00.572.492A3.381 3.381 0 0012 15.72c.855 0 1.487-.283 1.904-.562a3.081 3.081 0 00.572-.492l.021-.026a.75.75 0 011.197.905l-.027.034c-.013.016-.03.038-.052.063-.044.05-.105.119-.184.198a4.569 4.569 0 01-.695.566A4.88 4.88 0 0112 17.22a4.88 4.88 0 01-2.736-.814 4.57 4.57 0 01-.695-.566 3.253 3.253 0 01-.236-.261c-.259-.332-.223-.824.123-1.084z"/><path fill-rule="evenodd" d="M12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1zM2.5 12a9.5 9.5 0 1119 0 9.5 9.5 0 01-19 0z"/><path d="M9 10.75a1.25 1.25 0 11-2.5 0 1.25 1.25 0 012.5 0zM16.25 12a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z"/>
+                                                    <path d="M8.456 14.494a.75.75 0 0 1 1.068.17 3.08 3.08 0 0 0 .572.492A3.381 3.381 0 0 0 12 15.72c.855 0 1.487-.283 1.904-.562a3.081 3.081 0 0 0 .572-.492l.021-.026a.75.75 0 0 1 1.197.905l-.027.034c-.013.016-.03.038-.052.063-.044.05-.105.119-.184.198a4.569 4.569 0 0 1-.695.566A4.88 4.88 0 0 1 12 17.22a4.88 4.88 0 0 1-2.736-.814 4.57 4.57 0 0 1-.695-.566 3.253 3.253 0 0 1-.236-.261c-.259-.332-.223-.824.123-1.084Z"/><path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1ZM2.5 12a9.5 9.5 0 0 0 9.5 9.5 9.5 9.5 0 0 0 9.5-9.5A9.5 9.5 0 0 0 12 2.5 9.5 9.5 0 0 0 2.5 12Z"/><path d="M9 10.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0ZM16.25 12a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z"/>
                                                 </g>
                                             </svg>
                                             <span>My Profile</span>
@@ -236,116 +236,777 @@
             <div class="grow min-w-0 dark:bg-dark-850">
                 <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
                 <div class="flex">
-                    <div class="grow min-w-0 px-6 md:px-16">
-                        <main class="relative pt-6 pb-16">
+                    <div class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
                             <div class="docs-markdown" id="docs-content">
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                 
                                 <!-- Page content  -->
-<doc-anchor-target id="python-basics" class="break-words">
+<doc-anchor-target id="basics" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#python-basics">#</doc-anchor-trigger>
-        <span>Python Basics</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#basics">#</doc-anchor-trigger>
+        <span>Basics</span>
     </h1>
 </doc-anchor-target>
 <p>Programming constructs that are helpful while developing Python/Spark Applications</p>
+<hr />
 <doc-anchor-target id="primitive-data-types">
-    <h4>
+    <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#primitive-data-types">#</doc-anchor-trigger>
         <span>Primitive Data Types</span>
-    </h4>
+    </h2>
 </doc-anchor-target>
 <ul>
-<li>str : Strings are used to represent text
-<ul>
-<li>Single Quotes <code v-pre>'AE'</code> OR Doube Quotes <code v-pre>&quot;ad&quot;</code> can be used to represent String Literal</li>
-<li>Use triple quotes (&quot;&quot;&quot; or &#x27;&#x27;&#x27;) for mulitline strings
+<li><strong><code v-pre>int</code></strong> - used to store whole numbers</li>
+</ul>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-python"><code v-pre class="language-python">  '''first line
-  some text
-  third line
-  '''</code></pre>
+<pre class="language-python"><code v-pre class="language-python">	index = int(&quot;78&quot;)
+	print(index, type(index), isinstance(index, int), sys.getsizeof(index) )
+	# 78 &lt;class 'int'&gt; True 28</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p><strong><code v-pre>float</code></strong> - used to store decimal points <code v-pre>float(&quot;123.9&quot;)</code></p>
+</li>
+<li><p><strong><code v-pre>Boolean</code></strong> - used to store True / False values</p>
+</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	is_valid: bool = True
+	print(is_valid, type(is_valid), isinstance(is_valid, bool), sys.getsizeof(is_valid) )
+	# True &lt;class 'bool'&gt; True 28</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p><strong><code v-pre>str</code></strong> : Strings are used to represent text</p>
+<ul>
+<li><p>Single Quotes <code v-pre>'AE'</code> OR Doube Quotes <code v-pre>&quot;ad&quot;</code> can be used to represent String Literal</p>
+</li>
+<li><p>Use triple quotes (&quot;&quot;&quot; or &#x27;&#x27;&#x27;) for mulitline strings</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">  	''' 
+  		first line
+  		some text
+  		third line
+  	'''</code></pre>
 </doc-codeblock></div>
 </li>
-<li>f-strings: Formatted String - Used as an alternative for String concatenation
-- available from Python &gt;= 3.6
-<code v-pre>f&quot;This is {val} dynamic value replaced at runtime&quot; </code> instead of
-<code v-pre>&quot;This is &quot; + str(val) + &quot;dynamic value replaced at runtime&quot; </code>
-- Can be used for expression evaluation: <code v-pre>f&quot;{5-78}&quot;</code></li>
-<li>Escape the character using a backslash:
-<code v-pre>text = &quot;Halo said, \&quot;Hello!\&quot;&quot; </code></li>
-<li>Concatante: <code v-pre>&quot;str1&quot; + &quot;str2&quot; = &quot;str1str2&quot;</code></li>
-<li>Indexing: Starts with <code v-pre>0</code>,
+<li><p><strong>f-strings</strong>: Formatted String - Used as an alternative for String concatenation
+- available from Python &gt;= 3.6</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-python"><code v-pre class="language-python">  text=&quot;Sample Text&quot;
-  text[3]
-  text[0:3]  # substring 3 chars starting from 0</code></pre>
+<pre class="language-none"><code v-pre class="language-none">  * f&quot;This is {val} dynamic value replaced at runtime&quot;  instead of
+  - &quot;This is &quot; + str(val) + &quot;dynamic value replaced at runtime&quot;  , 
+  - &quot;This is %s dynamic value replaced at runtime&quot;.format(str(val)) 
+
+  - Can be used for expression evaluation: `f&quot;{5-78}&quot;`</code></pre>
 </doc-codeblock></div>
+</li>
+<li><p>Escape the character using a backslash:
+<code v-pre>text = &quot;Halo said, \&quot;Hello!\&quot;&quot; </code></p>
+</li>
+<li><p>Concatante: <code v-pre>&quot;str1&quot; + &quot;str2&quot; = &quot;str1str2&quot;</code></p>
+</li>
+<li><p>Indexing: Starts with <code v-pre>0</code>,</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">danger</div>
+<pre class="language-python"><code v-pre class="language-python">  	text=&quot;Sample Text&quot;
+  	text[3]
+  	text[0:3]  # substring 3 chars starting from 0</code></pre>
+</doc-codeblock></div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-red-500"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-red-500" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M21.71 6.15L15.85.29c-.19-.18-.44-.29-.71-.29H6.86c-.27 0-.52.11-.71.29L.29 6.15c-.18.19-.29.44-.29.71v8.28c0 .27.11.52.29.71l5.86 5.86c.19.18.44.29.71.29h8.28c.27 0 .52-.11.71-.29l5.86-5.86a.99.99 0 00.29-.71V6.86c0-.27-.11-.52-.29-.71zM20 14.73L14.73 20H7.27L2 14.73V7.27L7.27 2h7.45L20 7.27v7.46z"></path>
+                    <path d="M11 12c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1s-1 .45-1 1v4c0 .55.45 1 1 1zM11.01 14c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>Index Out of Range</h5>
+<div class="codeblock-wrapper"><doc-codeblock>
 <pre class="language-none"><code v-pre class="language-none">  IndexError: string index out of range</code></pre>
 </doc-codeblock></div>
+        </div>
+    </div>
+</div>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+            <h5>IndexError</h5>
 <div class="codeblock-wrapper"><doc-codeblock>
-<div class="codeblock-title">info</div>
 <pre class="language-none"><code v-pre class="language-none">  Substring won't raise an IndexError even the index is out of boundaries of a String</code></pre>
 </doc-codeblock></div>
+        </div>
+    </div>
+</div>
 <ul>
 <li><code v-pre>&quot;CRIC&quot;[6:9]</code></li>
 </ul>
 </li>
-<li>Negative Indexing: Last character has index <code v-pre>-1</code>
-|S|a|m|p|l|e| |C|o|l|<hr />
-|-9||-8|-7|-6|-5|-4|-3||-2|-1|</li>
-<li>Immutable</li>
-<li>Repetition <code v-pre>&quot;##&quot;*4</code></li>
-<li>**String Methods **
+<li><p>Negative Indexing: Last character has index <code v-pre>-1</code></p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th><strong>String</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Positive Index</td>
+</tr>
+<tr>
+<td>Negative Index</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>S</th>
+<th>a</th>
+<th>m</th>
+<th>p</th>
+<th>l</th>
+<th>e</th>
+<th>\</th>
+<th>c</th>
+<th>o</th>
+<th>l</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+<td>9</td>
+</tr>
+<tr>
+<td>-10</td>
+<td>-9</td>
+<td>-8</td>
+<td>-7</td>
+<td>-6</td>
+<td>-5</td>
+<td>-4</td>
+<td>-3</td>
+<td>-2</td>
+<td>-1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p>Immutable</p>
 <ul>
-<li><code v-pre>.lower()</code> <code v-pre>.upper()</code> <code v-pre>.strip()</code> <code v-pre>.lstrip()</code> <code v-pre>.rstrip()</code> <code v-pre>.startswith()</code> <code v-pre>.endswith()</code></li>
-<li><code v-pre>.find()</code> - to find the index of substring
-<code v-pre>&quot;A given ex&quot;.find(&quot;ex&quot;)</code> <strong>8</strong></li>
+<li>value cannot be changed once it&#x27;s created</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>int - used to store whole numbers  <code v-pre>int(&quot;78&quot;)</code></li>
-<li>float - used to store decimal points <code v-pre>int(&quot;123.9&quot;)</code></li>
-</ul>
-<doc-anchor-target id="built-in-functions">
-    <h5>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#built-in-functions">#</doc-anchor-trigger>
-        <span>Built-in Functions</span>
-    </h5>
-</doc-anchor-target>
-<ul>
-<li><p>len() - to get the length of a string including spaces &lt;br&gt;
-<code v-pre>len(a bc)</code> <strong>4</strong></p>
-</li>
-<li><p>type() - function to determine the data type of a given value
-&#x60;&#x60;&#x60;python
-type(&quot;Hello, World&quot;)
-# &lt;class &#x27;str&#x27;&gt;</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">  	type(1.99)
-  	# float
+<pre class="language-python"><code v-pre class="language-python">  	str_var = &quot;python&quot;
+  	str_var[0:3] = &quot;abc&quot;
 
-  	type(99)
-  	# int
-  	```</code></pre>
+  	# TypeError   Traceback (most recent call last)
+  	# TypeError: 'str' object does not support item assignment</code></pre>
 </doc-codeblock></div>
 </li>
-<li><p>input() - to take input from user
-<code v-pre>user_input = input(&quot;Enter your Name!&quot;) user_input.upper()</code></p>
+<li><p>del</p>
+<ul>
+<li>removes the references of the variable</li>
+</ul>
 </li>
-<li><p>Looping</p>
-</li>
-<li><p>Exceptions</p>
-</li>
-<li><p>Lists, Tuples, Sets</p>
-</li>
-<li><p>Dictionaries</p>
+<li><p>Repetition</p>
 </li>
 </ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">  	&quot;-*~~*-&quot;*4
+  	# '-*~~*--*~~*--*~~*--*~~*-'</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p><strong>String Methods</strong></p>
+<ul>
+<li><p><code v-pre>.lower()</code> <code v-pre>.upper()</code> <code v-pre>.strip()</code> <code v-pre>.lstrip()</code> <code v-pre>.rstrip()</code> <code v-pre>.startswith()</code> <code v-pre>.endswith()</code></p>
+</li>
+<li><p><code v-pre>.find()</code> - to find the index of substring</p>
+</li>
+<li><p><code v-pre>&quot;A given ex&quot;.find(&quot;ex&quot;)</code> # Output: <strong>8</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="built-in-functions">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#built-in-functions">#</doc-anchor-trigger>
+        <span>Built-in Functions</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><strong>len()</strong> - function to get the length of a string including spaces</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	len(&quot;a bc&quot;)
+	# Output: 4</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><strong>type()</strong> - function to determine the data type of a given value</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	&gt;&gt;&gt; type(&quot;Hello, World&quot;)
+		# &lt;type 'str'&gt;
+	&gt;&gt;&gt; type(1.99)
+		# &lt;type 'float'&gt;
+	&gt;&gt;&gt; type(99)
+		# &lt;type 'int'&gt;</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><strong>input()</strong> - to take input from user. By default it is of <code v-pre>str</code> datatype</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-markdown"><code v-pre class="language-markdown">	user_input = input(&quot;Enter your Name!&quot;)
+	user_input.upper()</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p><strong>sum()</strong> - sum of elements in the list / set</p>
+</li>
+<li><p><strong>min()</strong> - min of elements in the list / set</p>
+</li>
+<li><p><strong>max()</strong> - max of elements in the list / set</p>
+</li>
+<li><p><strong>enumerate()</strong> - adds the index for the elements in the list / set</p>
+</li>
+<li><p><strong>sorted()</strong> - sorts the elements in the list / set</p>
+</li>
+<li><p><strong>dir()</strong> - function to list all the functions available</p>
+</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	&gt;&gt;&gt; dir(&quot;abc&quot;)
+		['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__gt__', '__hash__', '__init__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_formatter_field_name_split', '_formatter_parser', 'capitalize', 'center', 'count', 'decode', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+	&gt;&gt;&gt; dir([&quot;a&quot;])
+		['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__delslice__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getslice__', '__gt__', '__hash__', '__iadd__', '__imul__', '__init__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__rmul__', '__setattr__', '__setitem__', '__setslice__', '__sizeof__', '__str__', '__subclasshook__', 'append', 'count', 'extend', 'index', 'insert', 'pop', 'remove', 'reverse', 'sort']
+	&gt;&gt;&gt; dir(set)
+		['__and__', '__class__', '__cmp__', '__contains__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__iand__', '__init__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update'] 
+</code></pre>
+</doc-codeblock></div>
+<hr />
+<doc-anchor-target id="lambda-functions">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#lambda-functions">#</doc-anchor-trigger>
+        <span>Lambda Functions</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><p>Inline and are limited to a single expression</p>
+</li>
+<li><p>Small anonymous functions that maintain no external state</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">  	x = ['Python', 'programming', 'is', 'awesome!']
+  	print(sorted(x))
+  	print(sorted(x, key=lambda arg: arg.lower()))
+  	# Output: [ 'awesome!', 'is', 'programming', 'Python']</code></pre>
+</doc-codeblock></div>
+</li>
+</ul>
+<ul>
+<li><p>filter()</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">  x = ['Python', 'programming', 'is', 'awesome!']
+  print(list(filter(lambda arg: len(arg) &lt; 8, x)))
+  # Output: ['Python', 'is']</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>map()</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">  &gt;&gt;&gt; x = ['Python', 'programming', 'is', 'awesome!']
+  &gt;&gt;&gt; print(list(map(lambda arg: arg.upper(), x)))
+  ['PYTHON', 'PROGRAMMING', 'IS', 'AWESOME!']</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>reduce()</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">  	from functools import reduce
+  	&gt;&gt;&gt; x = ['Python', 'programming', 'is', 'awesome!']
+  	&gt;&gt;&gt; print(reduce(lambda val1, val2: val1 + val2, x))
+  	Pythonprogrammingisawesome!</code></pre>
+</doc-codeblock></div>
+</li>
+</ul>
+<hr />
+<doc-anchor-target id="list-tuples-sets">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#list-tuples-sets">#</doc-anchor-trigger>
+        <span>List, Tuples, Sets</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="list">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#list">#</doc-anchor-trigger>
+        <span>List</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>:: Features ::
+<ul>
+<li>an ordered sequence of items</li>
+<li>heterogenous datatypes can be stored</li>
+<li>supports backward indexing, last index is -1</li>
+</ul>
+</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	empty_list = []
+	print(type(empty_list))
+	# &lt;class 'list'&gt;
+
+	hetro_list = [&quot;abc&quot;, 1, 0.0, False]
+	print(type(hetro_list))
+	for val in hetro_list:
+		print(val, type(val))
+	# abc &lt;class 'str'&gt;
+	# 1 &lt;class 'int'&gt;
+	# 0.0 &lt;class 'str'&gt;
+	# False &lt;class 'bool'&gt;
+
+	nested_list = [&quot;abc&quot;, 1, [20, 30], {&quot;a&quot;, &quot;b&quot;}, {'k': 'v'}]
+	print(type(nested_list))
+	for val in nested_list:
+		print(val, type(val))
+	# &lt;class 'list'&gt;
+	# abc &lt;class 'str'&gt;
+	# 1 &lt;class 'int'&gt;
+	# [20, 30] &lt;class 'list'&gt;
+	# {'a', 'b'} &lt;class 'set'&gt;
+	# {'k': 'v'} &lt;class 'dict'&gt;</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>List Indexing</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	nested_list[3: ]
+	# [[20, 30]]
+	nested_list[2: 3]
+	# [{'a', 'b'}, {'k': 'v'}]</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>List Operations</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	nested_list.append(&quot;3&quot;) # returns NoneType
+	nested_list
+	# ['abc', 1, [20, 30], {'a', 'b'}, {'k': 'v'}, '3']
+
+	nested_list.insert(3, 'd1') # returns NoneType
+	nested_list
+	# ['abc', 1, [20, 30], 'd1', {'a', 'b'}, {'k': 'v'}, '3', '3']
+
+	nested_list.remove('d1') # throws ValueError if item not present in the list
+
+	nested_list.pop() # Removes &amp; returns the last item
+
+	nested_list.pop(3) # Removes &amp; returns the item at index 3
+	# Returns IndexError if index out of range
+
+	del nested_list[4] # Removes item at index 4
+
+	# Re-assign / change the value in the list
+	nested_list[0] = &quot;eed&quot;
+
+	# Delete's all items in the list
+	nested_list.clear()
+
+	# Delete the list / removes the reference
+	del nested_list
+
+	# Check item present in list
+	&quot;abc&quot; in nested_list
+
+	# Sort, Reverse
+	list = ['a', 'b', 'c'] 
+	list.sort() # modifies the same list
+	# list ['c', 'b', 'a']
+
+	list.sort(reverse = True) # modifies the same list
+	# list ['a', 'b', 'c'] 
+
+	sorted(list) # returns a new list
+	# ['c', 'b', 'a']
+
+	# list ['c', 'b', 'a']
+	list.reverse() # modifies the same list
+	# ['c', 'b', 'a']
+
+	list[::-1] # returns a new list
+	# ['a', 'b', 'c']
+
+	list.count(&quot;a&quot;) # 1  # Count of occurence of item
+
+	all([1, 3, 0]) # False 
+
+	any([1, 3, 0]) # True </code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p>Looping</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">  	for val in nested_list:
+  		print(val, type(val))
+
+  	# abc &lt;class 'str'&gt;
+  	# [20, 30] &lt;class 'list'&gt;
+  	# hlehlr &lt;class 'str'&gt;
+  	# {'a', 'b'} &lt;class 'set'&gt;
+  	# {'k': 'v'} &lt;class 'dict'&gt;
+  	#  3 &lt;class 'str'&gt;
+
+  	for indx, val in enumerate(nested_list):
+  		print(val, indx)
+
+  	# abc 0
+  	# [20, 30] 1
+  	# hlehlr 2
+  	# {'a', 'b'} 3
+  	# {'k': 'v'} 4
+  	# 3 5
+</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p>List Copy</p>
+</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	list = ['a', 'b', 'c'] 
+
+	list_copy = list.copy()
+	#  Creates a copy of list
+	id(list_copy), id(list)
+	# 4617619584, 4504640128
+
+	list1 = list # references to the same list
+	id(list1), id(4504640128)
+	# 4504640128, 4504640128</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Join Lists</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	list_num = [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;]
+	list_indx = [&quot;1&quot;, &quot;2&quot;, &quot;3&quot;]
+
+	new_list = list_num + list_indx # Creates a new list
+
+	list_num.extend(list_indx) # Append list_indx to list_num
+
+	&quot;one&quot; in list_num # Check `one` present in the list</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Reverse</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	list_num.reverse() # Reverse the list internally
+	list_num
+	# ['three', 'two', 'one']
+
+	list_indx[::-1] # Returns the reversed list 
+	# ['3', '2', '1']
+	```
+
+	* Sort List
+	```python
+	list_indx.sort() # Sorts the list in ascending order
+	list_indx
+	# ['1', '2', '3']
+
+	list_indx.sort(reverse=True) # Sorts the list in descending order
+	list_indx
+	# ['3', '2', '1']
+
+
+	sorted(list_indx) # Uses in built sorted()
+	# ['1', '2', '3']
+	```
+
+	* Looping through a list
+	```python
+		for item in list_num:
+			print(item)
+		
+		# three
+		# two
+		# one	
+
+		for indx, item in enumerate(list_num):
+			print(f&quot;{indx} --&gt; {item}&quot;)
+
+		# 0 --&gt; three
+		# 1 --&gt; two
+		# 2 --&gt; one
+</code></pre>
+</doc-codeblock></div>
+<ul>
+<li>Count, All, Any</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	list_num.count(&quot;one&quot;) #1
+
+	all(list_indx)	# True as list doesn't contain 0 
+
+	any(list_indx)	# True as list contains item other than 0 
+
+	list_indx = [0, 1, 3]
+
+	all(list_indx)	# False as list contains 0 
+
+	any(list_indx)	# True as list contains element other than 0 </code></pre>
+</doc-codeblock></div>
+<ul>
+<li>List Comprehension</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	# Get all the lower case characters convert to upper &amp; append using `,`
+	from string import ascii_lowercase
+	char_list = [char.upper() for char in ascii_lowercase]
+	&quot;,&quot;.join(char_list)
+	# 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z'
+
+   # Square of odd numbers
+   doubled_list = [num ** 2 for num in range(10) if num % 2 != 0]
+   doubled_list
+   # [1, 9, 25, 49, 81]</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="tuple">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#tuple">#</doc-anchor-trigger>
+        <span>Tuple</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Characteristics:
+<ul>
+<li>Immutable values can&#x27;t be changed once created</li>
+<li>Used for holding multiple values</li>
+<li>faster iteration compared to list</li>
+</ul>
+</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	tpl = () # empty tuple
+
+	tpl2 = (&quot;a&quot;, 1) # tuple with string &amp; int values
+	tpl2
+	# ('a', 1)
+
+	tpl3 = (1.4, 3.3, 4.5) # tuple with 3 values of floating data types
+	len(tpl3) # 3
+
+	tpl4 = (1, &quot;3.3&quot;, [4, 5], {&quot;1&quot;, &quot;1&quot;, &quot;2&quot;} ) # tuple with 4 values of mixed data types
+
+	for indx in tpl4:
+    	print(indx, type(indx))
+
+	# 1 &lt;class 'int'&gt;
+	# 3.3 &lt;class 'str'&gt;
+	# [4, 5] &lt;class 'list'&gt;
+	# {'2', '1'} &lt;class 'set'&gt;
+
+	tpl4[2][2] # tuple, list index starts with 0
+
+	tpl4[:2] # # first 2 items in the tuple
+
+	tpl4[-1] # # last item in the tuple
+
+	tpl4.index(&quot;3.3&quot;) # 1 Index of element
+</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="sets">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#sets">#</doc-anchor-trigger>
+        <span>Sets</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li>Holds only unique values</li>
+<li>only Immutable values are allowed,</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	nums = {4, 0, 8, 9, 4, 0}
+	len(nums) # 4
+
+	items = {4, [0, 8, 9], (4, 0, 5), &quot;some text&quot;}
+	# TypeError: unhashable type: 'list'
+
+	items = {4, (4, 0, 5), &quot;some text&quot;}
+	for item in items:
+		if type(item) == str or type(item) == tuple:
+			print(item, len(item))
+		else:
+			print(item)
+		# some text 9
+		# 4
+		# (4, 0, 5) 3
+
+	items.add(&quot;NINE&quot;) 
+	items # Adds to the same set
+
+	items.update([&quot;NINE&quot;, &quot;NINE&quot;, &quot;NINETO&quot;]) 
+	items # Adds the items in the list to the same set
+	# {(4, 0, 5), 4, 'NINE', 'NINETO', 'some text'}
+			
+	items.remove(&quot;NINE&quot;) 
+	items # Removes item `NINE` from the set 
+	# {(4, 0, 5), 4, 'NINETO', 'some text'}
+
+	items.discard(&quot;NINE&quot;) 
+	items # same as remove
+
+	items.clear() 
+	items # Adds the items in the list to the same 		
+
+	# Set operations
+	# union, update, intersection, difference, issubset, issuperset, isdisjoint</code></pre>
+</doc-codeblock></div>
+<doc-anchor-target id="dict-dictionary">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#dict-dictionary">#</doc-anchor-trigger>
+        <span>dict: Dictionary</span>
+    </h2>
+</doc-anchor-target>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">* Mutable data type {&quot;key&quot;: &quot;value&quot;}
+* Keys must be unique, values can be duplicate</code></pre>
+</doc-codeblock></div>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">	dummy_dict = dict() # Creates empty dict
+	dummy_dict = {} # Creates empty dict
+
+	int_dict = {1: &quot;one&quot;, 2: &quot;two&quot;} # 
+	int_dict = dic({1: &quot;one&quot;, 2: &quot;two&quot;}) # 
+	int_dict.keys() # dict_keys([1, 2])
+	int_dict.values() # dict_values(['one', 'two'])
+
+	for key, value in int_dict.items():
+	    print(key, value)
+	# 1 one
+	# 2 two
+
+	keys = {&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;}
+	str_dict = dict.fromkeys(keys)
+	str_dict # {'c': None, 'd': None, 'b': None, 'a': None}
+
+	keys = {&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;}
+	vals = [1, 3, 44]
+	str_dict = dict.fromkeys(keys, vals)
+	str_dict # {'c': [1, 3, 44], 'd': [1, 3, 44], 'b': [1, 3, 44], 'a': [1, 3, 44]}
+
+	str_dict[&quot;d&quot;] # [1, 3, 44]
+	# KeyError: 'da' if key not present
+
+	type(str_dict.get(&quot;da&quot;)) # NoneType 
+	# doesn't throw Keyerror returns None</code></pre>
+</doc-codeblock></div>
+<ul>
+<li><p><code v-pre>dict</code> can have mixed keys &amp; nested types
+mixed keys</p>
+<ul>
+<li><code v-pre>mixed_dict = {1: &quot;one&quot;, '2': &quot;two&quot;}</code> # Mixed Keys</li>
+<li><code v-pre>nested_dict = {1: &quot;one&quot;, '2': [&quot;two&quot;, 2]}</code> # Nested Dict</li>
+</ul>
+</li>
+<li><p>Updating Items in <code v-pre>dict</code></p>
+<ul>
+<li><code v-pre>row = {'name': 'PVN', 'id': 111, 'group': 'ABC'} </code></li>
+<li>row[&#x27;id&#x27;] = 11</li>
+<li>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">    item = {'group': 'MPC'}
+    row.update(item) </code></pre>
+</doc-codeblock></div>
+</li>
+</ul>
+</li>
+<li><p>Remove Items in <code v-pre>dict</code></p>
+<ul>
+<li><code v-pre>row.pop(&quot;group&quot;)</code> # removes the item from the dict</li>
+<li><code v-pre>row.popitem()</code> # removes random item</li>
+<li>del[row[&#x27;id&#x27;]]</li>
+<li>row.clear() # Clears all the items</li>
+</ul>
+</li>
+<li><p>All / Any</p>
+<ul>
+<li>The all() method returns:
+<ul>
+<li>True - If all all keys of the dictionary are true</li>
+<li>False - If any key of the dictionary is false</li>
+</ul>
+</li>
+<li>The any() function returns True if any key of the dictionary is True. If not, any() returns False</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Dict Comprehension</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">  	num_double = {num: num * 2 for num in range(10)} # double each value using dict comprehension
+  	num_double
+  	# {0: 0, 1: 2, 2: 4, 3: 6, 4: 8, 5: 10, 6: 12, 7: 14, 8: 16, 9: 18}
+
+  	num_square = {num: num ** 2 for num in range(10)} # square each value 
+  	num_square
+  	# {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81}
+
+  	keys = ['abc' , 'def' , 'ghi' , 'jkl' , 'mno']
+  	values = [1,2,3,4,5]
+  	str_dict = {k:v for (k,v) in zip(keys,values)} #</code></pre>
+</doc-codeblock></div>
+</li>
+</ul>
+<hr />
+<ul>
+<li>Looping</li>
+<li>Exceptions</li>
+</ul>
+<doc-anchor-target id="modules">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#modules">#</doc-anchor-trigger>
+        <span>Modules</span>
+    </h2>
+</doc-anchor-target>
+<ul>
+<li><strong>module</strong> - contains reusable code builtin / custom</li>
+</ul>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-python"><code v-pre class="language-python">import sys
+import keyword
+import operator
+from datetime import datetime
+import os
+
+&gt;&gt;&gt; print(keyword.kwlist) # List all Python Keywords
+['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+&gt;&gt;&gt; len(keyword.kwlist)
+31</code></pre>
+</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
@@ -355,20 +1016,20 @@ type(&quot;Hello, World&quot;)
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../python-3.x/advanced/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../dataset/usecase/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Python Advacned</span>
+                                                <span class="block mt-1">Parser Utils</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../start/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../python-3.x/functions/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Start</span>
+                                                <span class="block mt-1">Functions</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -412,6 +1073,6 @@ type(&quot;Hello, World&quot;)
 
     <div id="docs-overlay-target"></div>
 
-    <script>window.__DOCS__ = { "title": "Python Basics", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
+    <script>window.__DOCS__ = { "title": "Basics", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false }</script>
 </body>
 </html>
